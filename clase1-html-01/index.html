@@ -1,45 +1,63 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML 01</title>
+<!DOCTYPE html> <!-- DECLARACIÓN DE TIPO DE DOCUMENTO -->
+<html lang="es"> <!-- INFORMA AL NAVEGADOR EL IDIOMA -->
+  <head> <!-- METADATOS DE CONFIGURACIÓN -->
+    <meta charset="UTF-8" /> <!-- COFICACIÓN DE CARACTERES - INCLUYE Ñ, ACENTOS, DIÉRESIS, SIGNOS DE APERTURA, EMOJIS, ETC. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- VIEWPORT - ESPACIO DONDE VEO EL CONTENIDO -->
+    <title>HTML 01</title> <!-- ÚNICO METADATO VISIBLE EN PESTAÑA -->
   </head>
   <body>
-    <header>Cabezera</header>
 
-    <main>
-      <h1>Titulo principal</h1>
+    <!-- <div class="cabecera" id="header">>Cabecera</div> ATRIBUTOS PARA IDENTIFICAR A CADA ELEMENTO -->
+    <header> <!-- ETIQUETA SEMÁNTICA -->
+      Cabecera
+    </header>
 
-      <p>Hola HTML!!!</p>
+    <main> <!-- ETIQUETA SEMÁNTICA. SOLO DEBERÍA HABER UN MAIN, LA RAZÓN POR LA QUE ENTRO AL SITIO -->
+      <h1>Título principal</h1> <!-- h1 ES EL TÍTULO DEL CONTENIDO, DEBERÍA HABER UNO SOLO -->
 
-      <p>Este año, este día</p>
+      <!-- <div>Hola HTML!!!</div> AGRUPADOR DE CONTENIDO EN BLOQUE, NO TIENE SENTIDO SEMÁNTICO, OCUPA TODO EL ANCHO DE SU CONTENEDOR (BODY), EL ELEMENTO QUE SIGUE VA ABAJO, C/U TIENE SU PROPIO RENGLÓN -->
+      <!-- <span>Hola HTML!!!</span> ELEMENTOS EN LÍNEA, SOLO OCUPAN EL ANCHO DE SU CONTENIDO, SI HAY OTRO ELEMENTO EN LÍNEA SE ACOMODA AL LADO. TAMPOCO TIENE SENTIDO SEMÁNTICO -->
+
+      <p>Hola HTML!!!</p> <!-- p - ELEMENTO EN BLOQUE, OCUPA TODO EL ANCHO DE SU CONTENEDOR -->
+
+      <p>Este año, este día</p> <!-- ELEMENTOS SEMÁNTICOS PORQUE REPRESENTAN ALGO (UN PÁRRAFO, UNA IMAGEN, UN ENLACE, ETC) -->
     </main>
 
-    <section>
-      <h2>Seccion 1</h2>
+    <section> <!-- ETIQUETA SEMÁNTICA -->
+      <h2>Sección 1</h2> <!-- ENCABEZADOS - TÍTULOS Y SUBTÍTULOS QUE NOS PERMITEN JERARQUIZAR NUESTRO CONTENIDO -->
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-        Ex atque quae illo quam consequatur <span>veniam quibusdam</span> ullam
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> <!-- br - ELEMENTO VACIÓ, NO LLEVA ATRIBUTOS. GENERA UN ENTER. NO USAR PARA ESTILOS -->
+        Ex atque quae illo quam consequatur <span style = "color: red">veniam quibusdam</span> ullam
         velit laborum sapiente numquam quas, amet obcaecati maiores nobis
         molestias ea assumenda minima!
       </p>
 
-      <a href="https://google.com" target="_blank">Google</a>
+      <a href="https://google.com" target="_blank">Google</a> <!-- HIPERVÍNCULO / _blank PARA ABRIR EL ENLACE EXTERNO EN UNA NUEVA PESTAÑA -->
 
-      <img src="https://picsum.photos/300/100" alt="Lorem Picsum" />
+      <img src="https://picsum.photos/300/100" alt="Lorem Picsum" /> <!-- LOS MOTORES DE BÚSQUEDA ANALIZAN LA DESCRIPCIÓN alt, NO LA IMAGEN -->
     </section>
 
-    <section>
-      <h2>Seccion 2</h2>
+    <section> <!-- ETIQUETA SEMÁNTICA -->
+      <h2>Sección 2</h2>
     </section>
 
-    <!-- Esto es un comentario -->
+    <!-- Esto es un comentario PARA QUE NO SE INTERPRETE / NO SE VEA -->
 
-    <!-- <etiqueta atributo="valor/valores">Contenido</etiqueta> -->
+    <!-- <etiqueta atributo="valor/valores">Contenido</etiqueta> ETIQUETA COMPLETA -->
 
-    <!-- <etiqueta atributo="valor/valores"> -->
+    <!-- <etiqueta atributo="valor/valores" /> ETIQUETA VACÍA / SELF-CLOSING -->
 
-    <footer>Pie de pagina</footer>
+    <footer> <!-- ETIQUETA SEMÁNTICA -->
+      Pie de página
+    </footer>
+
   </body>
 </html>
+
+<!-- LINKS ÚTILES:
+  https://htmlreference.io/
+  https://developer.mozilla.org/es/docs/Web/HTML
+  https://www.w3api.com/HTML/
+  https://www.w3schools.com/html/default.asp
+  https://www.w3schools.com/html/html_blocks.asp
+-->
