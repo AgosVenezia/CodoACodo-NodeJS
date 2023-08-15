@@ -19,8 +19,33 @@
     </nav>
 
     <main>
+      <!-- SEMÁNTICA: lo que quiero representar -->
+
+      <!-- Antes de la actualización de 2015 de HTML:
+      <div id="section" class="seccion">
+        <h2>No ordenada</h2> 
+
+        <ul>
+          <li>Item 5</li>
+          <li>Item X</li>
+          <li>Item 1</li>
+        </ul>
+      </div> -->
+
+      <!-- El artículo es independiente, si lo saco sigue teniendo sentido
+      <article>
+        <h2>No ordenada</h2> 
+
+        <ul>
+          <li>Item 5</li>
+          <li>Item X</li>
+          <li>Item 1</li>
+        </ul>
+      </article> -->
+
       <section>
-        <h2>Desordenada</h2>
+        <!-- <h2>Desordenada</h2> -->
+        <h2>No ordenada</h2> <!-- Lista sin un orden en particular: : conjunto de elementos relacionados pero sin jerarquía -->
 
         <ul>
           <li>Item 5</li>
@@ -30,7 +55,7 @@
       </section>
 
       <section>
-        <h2>Ordenada</h2>
+        <h2>Ordenada</h2> <!-- Lista ordenada semánticamente: conjunto de elementos con jerarquía -->
 
         <ol>
           <li>Paso 3</li>
@@ -40,11 +65,11 @@
       </section>
 
       <section>
-        <h2>Descriptiva</h2>
+        <h2>Descriptiva</h2> <!-- Lista de términos y definiciones correspondientes -->
 
-        <dl>
-            <dt>Termino</dt>
-            <dd>Descripcion del termino...</dd>
+        <dl> <!-- dl: definition list -->
+            <dt>Término</dt>
+            <dd>Descripción del término...</dd>
         </dl>
       </section>
     </main>
@@ -52,3 +77,10 @@
     <footer>Copyright 2023</footer>
   </body>
 </html>
+
+<!-- 
+Links útiles:
+https://www.w3schools.com/html/html_lists.asp
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
+https://www.w3schools.com/css/css_list.asp
+-->

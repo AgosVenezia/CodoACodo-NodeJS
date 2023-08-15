@@ -8,19 +8,23 @@
   <body>
     <h1>Enlaces</h1>
 
-    <a href="https://www.google.com/imghp" target="_blank">Google Imagenes</a>
+    <a href="https://www.google.com/imghp" target="_blank">Google Imágenes</a> <!-- Enlaces externos -->
+    <!-- URL absoluta https://www.google.com/imghp -->
+    <!-- a:anchor     protocolo://subdominio.nombredeldominio.extensión/rutaopath -->
 
     <br />
 
-    <!-- <a href="C:\Users\jepaf\OneDrive\Documentos\html-02\index.html">Inicio</a> -->
+    <!-- <a href="C:\Users\jepaf\OneDrive\Documentos\html-02\index.html">Inicio</a> --> <!-- Ruta absoluta atada a mi PC - No usar! -->
     
-    <a href="http://127.0.0.1:5500/">Inicio</a>
-    <a href="http://127.0.0.1:5500/index.html">Inicio</a>
+    <a href="http://127.0.0.1:5500/">Inicio</a> <!-- Ruta absoluta: dominio -->
+    <!--     misitio.com/           la barra representa la página principal -->
+    <a href="http://127.0.0.1:5500/index.html">Inicio</a> <!-- Ruta absoluta: dominio + index.html -->
+    
+    <a href="/index.html">Inicio</a> <!-- Ruta absoluta: barra para ir al principio del dominio + index.html -->
 
-    <a href="/index.html">Inicio</a>
-
-    <a href="./index.html">Inicio</a>
-    <a href="index.html">Inicio</a>
+    <!-- Las dos formas más recomendadas: -->
+    <a href="./index.html">Inicio</a> <!-- Ruta absoluta: punto + index.html (desde la carpeta actual buscar el index.html) -->
+    <a href="index.html">Inicio</a> <!-- Ruta relativa total: si lo tengo en la misma carpeta, simplemente lo nombro -->
 
     <br>
 
