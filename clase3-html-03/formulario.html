@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Formulario</h1>
+
+    <form action="" method="get" enctype="application/x-www-form-urlencoded"> <!-- convierte caracteres especiales a ASCII para evitar inyecciones SQL -->
+    <!-- action: Indica el archivo que manejará la información enviada -->
+    <!-- method: Puede ser POST o GET e indica si los datos se enviarán por URL u ocultos en la consulta -->
+    <!-- enctype: Su valor contiene el tipo de información que se va a enviar -->  
+      <div>
+        <label for="nombre">Nombre: </label>
+        <input
+          required
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Nombre completo"
+          value="Juan"
+          readonly
+        />
+        <!-- required: valida que el campo esté completo antes de enviar la información -->
+        <!-- placeholder: texto soporte que aparece dentro de un input e indica un ejemplo de cómo llenar ese campo -->
+        <!-- value: para introducir un valor por defecto en el campo -->
+        <!-- readonly: si queremos que sea de sólo lectura -->
+      </div>
+
+    <!-- 
+      type text: entrada de texto en una sola linea
+      type password: entrada de texto oculto
+      type email: entrada de correos electrónicos (solicita que su value contenga un @)
+      type number: entrada de datos numéricos
+      type date: despliega un calendario para seleccionar una fecha
+      type file: permite cargar un archivo
+      type color: brinda color picker para seleccionar un color
+      type radio: elementos de selección simple o única, por ejemplo cuando creamos encuestas con preguntas de una sola respuesta posible
+      type checkbox: Elementos de selección múltiple, por ejemplo cuando una misma pregunta tiene varias opciones posibles de respuesta
+      textarea: representa un campo que nos permite introducir textos multilínea
+      button: Es igual que los input de los tipos submit, button y reset solo que este posee etiqueta de apertura y cierre para colocarle contenido adicional que no sea texto
+    -->
+
+      <div>
+        <label for="password">Contraseña: </label>
+        <!-- label: Etiqueta que contiene un texto asociado a un input vinculado a través del atributo for -->
+        <input type="password" name="password" id="password" />
+        <!-- input: Es la más genérica de todas. Acepta un atributo type que indica el tipo de datoque recibirá esa etiqueta, un name donde se asigna el nombre que llevará ese datoal viajar y un id con el fin de identificar esa etiqueta de forma única -->
+      </div>
+
+      <div>
+        <label for="mensaje">Mensaje: </label>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+      </div>
+
+      <div>
+        <label for="provincia">Provincia: </label>
+        <select name="provincia" id="provincia">
+        <!-- Nos permite crear una lista desplegable de opciones, cada opción estará contenida como hija dentro de un elemento <option> donde vamos a encapsular cada opción de la lista -->
+          <option value=""></option>
+          <option value="ba">Buenos Aires</option>
+          <option value="cb">Cordoba</option>
+          <option value="tu">Tucuman</option>
+        </select>
+      </div>
+
+      <!-- <input type="submit" value="Enviar"> -->
+      <button type="submit">Enviar</button>
+      <!-- submit: Ejecuta la acción de enviar los datos al archivo indicado en action -->
+      <!-- reset: Limpia todos los campos del formulario -->
+      <!-- button: Carece de efecto, sirve para darle un comportamiento propio desde javascript -->
+    </form>
+  </body>
+</html>
+
+<!--
+  LINKS ÚTILES:
+  https://www.w3schools.com/tags/tag_input.asp
+-->

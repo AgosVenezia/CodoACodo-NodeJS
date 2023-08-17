@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imágenes</title>
+  </head>
+  <body>
+    <h1>Imágenes</h1>
+
+    <div>
+      <img src="https://picsum.photos/200/100" alt="Lorem Picsum" /> <!-- Ruta absoluta -->
+      <!-- src=el valor indica la ruta donde se encuentra la imágen-->
+      <!--                                     alt=descripción de la imagen para accesibilidad. -->
+    </div>
+
+    <div>
+      <img 
+        width="200" 
+        src="img/art-institute-of-chicago-ULiunopLquw-unsplash.jpg" 
+        alt="Foto de Art Institute of Chicago en Unsplash"
+      />
+    </div>
+
+    <!--
+    <div>
+      Foto de <a href="https://unsplash.com/es/@artchicago?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Art Institute of Chicago</a> en <a href="https://unsplash.com/es/fotos/un-grupo-de-hombres-parados-en-la-parte-superior-de-un-edificio-ULiunopLquw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </div>
+    -->
+
+    <picture> <!-- Distintas imágenes para distintos tipos de dispositivos -->
+      <source
+        media="(min-width:1024px)"
+        srcset="img/hiki-app-AvWfCletVGk-unsplash.jpg"
+      />
+      <source
+        media="(min-width:768px)"
+        srcset="img/denis-kirichkov-PVQcdxcFxfQ-unsplash.jpg"
+      />
+      <img
+        src="img/stas-ostrikov-_DmGDhnKuxc-unsplash.jpg"
+        alt="Flowers"
+        style="width: auto"
+      />
+    </picture>
+
+    <figure> <!-- Etiqueta contenedora de una imagen o foto-->
+      <img
+        width="200"
+        src="img/art-institute-of-chicago-ULiunopLquw-unsplash.jpg"
+        alt="Foto de Art Institute of Chicago en Unsplash"
+      />
+      <figcaption>Foto construccion de Art Institute of Chicago en Unsplash</figcaption> <!-- Coloca un caption debajo de la imagen como información adicional -->
+    </figure>
+  </body>
+</html>
+
+<!-- 
+  LINKS ÚTILES:
+  https://www.w3schools.com/tags/tag_picture.asp
+  https://www.w3schools.com/tags/tag_figure.asp
+-->
