@@ -32,8 +32,8 @@
         <!-- name: clave en donde se va a cargar el dato que ingresa el usuario, es lo que va a recibir quien procese este dato para identificarlo -->
         <!-- el label y el input se unen a través de for y id - mismo valor. Hago clic en el label y hace foco en el input -->
         <!-- placeholder: texto soporte que aparece dentro de un input e indica un ejemplo de cómo llenar ese campo -->
-        <!-- value: para introducir un valor por defecto en el campo -->
-        <!-- readonly: si queremos que sea de sólo lectura -->
+        <!-- value: para introducir un valor por defecto en el campo - valor predeterminado -->
+        <!-- readonly: si queremos que sea de sólo lectura - aparece el value pero no se puede modificar -->
       </div>
       <!-- Con el método GET a la URL se le añade l?nombre=Juan -->
 
@@ -60,24 +60,24 @@
 
       <div>
         <label for="mensaje">Mensaje: </label>
-        <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea> <!-- Similar a un input pero con varias líneas más -->
       </div>
 
       <div>
         <label for="provincia">Provincia: </label>
         <select name="provincia" id="provincia">
         <!-- Nos permite crear una lista desplegable de opciones, cada opción estará contenida como hija dentro de un elemento <option> donde vamos a encapsular cada opción de la lista -->
-          <option value=""></option>
-          <option value="ba">Buenos Aires</option>
-          <option value="cb">Cordoba</option>
-          <option value="tu">Tucuman</option>
+          <option value=""></option> <!-- Opción vacía para que no quede ninguna seleccionada, sino queda la primera -->
+          <option value="ba">Buenos Aires</option> <!-- El value es lo que se envía a quien lo procese, el id de la base de datos -->
+          <option value="cb">Córdoba</option>
+          <option value="tu">Tucumán</option>
         </select>
       </div>
 
-      <!-- <input type="submit" value="Enviar"> -->
+      <!-- <input type="submit" value="Enviar"> Es mejor darle estética a un button que a un input submit --> 
       <button type="submit">Enviar</button>
       <!-- submit: Ejecuta la acción de enviar los datos al archivo indicado en action -->
-      <!-- reset: Limpia todos los campos del formulario -->
+      <!-- reset: Limpia todos los campos del formulario - tratar de no usarlo! -->
       <!-- button: Carece de efecto, sirve para darle un comportamiento propio desde javascript -->
     </form>
   </body>
