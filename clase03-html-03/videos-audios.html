@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video controls autoplay>
+    <!-- controls: Atributo que habilita los controles de video -->
+    <!-- autoplay: El video se comenzará a reproducir solo (deshabilitado por algunos navegadores) -->
+        <source src="movie.mp4" type="video/mp4"> <!-- Dos opciones de formato por si el sistema operativo no soporta el video -->
+        <source src="movie.ogg" type="video/ogg"> <!-- ogg es de licencia libre -->
+        El navegador no soporta el video
+    </video>
+
+    <audio controls>
+    <!-- controls (obligatoria): Atributo que habilita los controles de audio -->
+    <!-- autoplay: El audio se comenzará a reproducir solo (deshabilitado por algunos navegadores) -->
+    <!-- preload: Indica si el audio debe ser precargado o no al cargar la página -->
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        El navegador no soporta el archivo.
+    </audio>
+</body>
+</html>
+
+<!-- 
+  LINKS ÚTILES:
+  https://www.w3schools.com/tags/tag_video.asp
+  https://www.w3schools.com/tags/tag_audio.asp
+-->
