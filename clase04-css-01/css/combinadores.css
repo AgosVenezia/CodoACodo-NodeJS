@@ -1,19 +1,19 @@
-/* section > p {
+section > p { /* Descendiente directo */
   color: red;
-} */
+}
 
-/* h2 + p {
+h2 + p { /* Hermanos adyacentes: el elemento tiene que estar exactamente después, no tiene que haber nada en el medio */
   color: green;
-} */
+}
 
-/* h2 ~ p {
+h2 ~ p { /* Elementos que continúan a uno, no importa si hay algo en el medio (h3, por ejemplo) */
   color: blue;
-} */
+}
 
 .item {
   text-decoration: none;
 }
 
-.item.active {
+.item.active { /* Las dos clases deben ir pegadas */
   color: red;
 }

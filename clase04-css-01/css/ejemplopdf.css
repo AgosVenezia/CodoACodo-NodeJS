@@ -1,0 +1,11 @@
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+article {
+    color: crimson;
+}
+
+/* 
+El elemento <p> hereda el color de texto de <article> y la tipografía de <body> mientras que el <h1> sólo hereda la fuente y no el color. Una vez asignada la misma propiedad heredada al elemento hijo (aunque tenga distinto valor) éste corta la herencia de su elemento padre.
+*/

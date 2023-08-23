@@ -8,6 +8,7 @@
   </head>
   <body>
     <h1>Especificidad</h1>
+    <!-- Combinar selectores para darle más especificidad a un elemento -->
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
 
@@ -24,12 +25,14 @@
       <p>Saepe, rerum. Pariatur, rerum repudiandae.</p>
     </section>
 
+    <!--<article style="color: pink" id="articulo-1">-->
     <article id="articulo-1">
       <div class="texto">
-        <p>articulo-1</p>
+        <p>Lorem ipsum dolor sit amet.</p>
       </div>
       <div class="otro-texto">
         <p>Lorem ipsum dolor sit.</p>
+        <p id="ofertas" class="cards">ID + class en el mismo elemento</p>
       </div>
     </article>
   </body>

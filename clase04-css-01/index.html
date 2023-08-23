@@ -4,21 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS 01</title>
+    <!-- CSS INTERNO -->
+    <!--
+    <style>
+      p {
+        color: red;
+        color: rgb(130, 75, 75);
+        font-size: 24px;
+      }
+    -->
+    <!-- CSS EXTERNO -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <!-- JERARQUÍA POR CASCADA: nuestros archivos siempre se van a interpretar de arriba hacia abajo, lo último que queda es lo que se aplica (a misma especificidad, a misma precedencia y a misma propiedad).Generalmente arriba va la hoja principal (o Bootstrap) y abajo la que modificamos -->
   </head>
   <body class="body-index">
     <h1>CSS 01</h1>
-    <p style="color: aqua">Lorem ipsum dolor sit amet.</p>
+    <p>Herencia: propiedades asignadas a un elemento padre adquiridas o heredadas por sus elementos hijos.</p>
+    <p style="color: aqua">Lorem ipsum dolor sit amet.</p> <!-- CSS EN LÍNEA -->
     <p>Lorem ipsum dolor sit amet consectetur.</p>
     <a href="contacto.html">Contacto</a>
 
+    <!-- (p>lorem5)*5 -->
     <p>Lorem ipsum dolor sit amet.</p>
-    <p class="parrafo-azul parrafo">Nihil, maiores? Reiciendis, eum officia</p>
+    <p class="parrafo-azul parrafo">Nihil, maiores? Reiciendis, eum officia</p> <!-- Puede tener dos o más class -->
     <p id="parrafo-tres">Unde ducimus quam cumque sit.</p>
-    <p class="parrafo-azul">
-      Fugiat <span>assumenda</span> architecto quaerat cum
-    </p>
-    <p id="parrafo-cinco">Possimus earum alias minus dignissimos.</p>
+    <p class="parrafo-azul">Fugiat <span>assumenda</span> architecto quaerat cum</p>
+    <p id="parrafo-cinco">Possimus earum alias minus dignissimos.</p> <!-- Si el ID se repite funciona igual pero no se debe hacer! -->
   </body>
 </html>

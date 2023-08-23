@@ -1,12 +1,14 @@
-p {
-  color: red !important;
+p { /* ESPECIFICIDAD: 0,0,1 */
+  color: red !important; /* !important para que ese valor se mantenga en todo mi proyecto, por ejemplo color de marca */
   font-family: 'Courier New', Courier, monospace !important;
 }
 
-.parrafo-azul {
+.parrafo-azul { /* ESPECIFICIDAD: 0,1,0 */
   color: blue;
 }
 
-#parrafo-dos {
+#parrafo-dos { /* ESPECIFICIDAD: 1,0,0 */
   color: green;
 }
+
+/* En este ejemplo, todos los <p> quedan en color: red porque el !important pisa a todos los estilos */

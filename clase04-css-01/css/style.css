@@ -1,24 +1,34 @@
-* {
+* { /* SELECTOR UNIVERSAL: todos los elementos de HTML */
   /* margin: 0; */
   /* padding: 0; */
   box-sizing: border-box;
 }
 
-p {
-  color: orange;
+p { /* selector: elemento de HTML */ /* SELECTOR ETIQUETA: etiqueta específica */
+  /*color: red;*/
+  /*font-size: 24px;*/
+  color: orange; /* propiedad + valor */
   font-size: 18px;
 }
 
-.parrafo-azul {
+.parrafo-azul { /* SELECTOR CLASE: todos los elementos HTML que contengan ese atributo class */
   color: blue;
 }
 
-#parrafo-tres {
+#parrafo-tres { /* SELECTOR ID: todos los elementos HTML que contengan ese atributo id */
   color: green;
-  /* font-family: "Times New Roman", Times, serif; */
+  /*font-family: "Times New Roman", Times, serif;*/
 }
 
 .body-index {
   font-family: "Courier New", Courier, monospace;
   color: chartreuse;
 }
+
+span {
+  font-size: 10px;
+}
+
+/*p {
+  color: blueviolet;
+} También se puede colocar en el mismo archivo CSS para sobreescribir */

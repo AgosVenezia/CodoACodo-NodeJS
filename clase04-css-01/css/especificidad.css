@@ -1,15 +1,30 @@
-section p {
+/* Cada selector posee una especifidad y esta nos indica cuán directa es la selección del elemento */
+
+/*body section p { Puede haber elementos intermedios como un <div>
+  color: red;
+}*/
+
+section p { /* Combinación de selectores de etiqueta: etiqueta + etiqueta: especificidad 0,0,2 */
   color: red;
 }
 
-.seccion-2 p {
-  color: green;
+.seccion-2 p { /* Clase + etiqueta: especificidad 0,1,1 */
+  color: green; /* Gana por precedencia y por especificidad */
 }
 
-#articulo-1 .texto p {
+#articulo-1 .texto { /* ID + clase: especificidad 1,1,0 */
   color: blue;
 }
 
+#articulo-1 .texto p { /* ID + clase + etiqueta: especificidad 1,1,1 */
+  color: blue;
+} /* Gana por precedencia y por especificidad */
+
 /* article div p {
+  color: pink !important;
   color: pink;
 } */
+
+#ofertas.cards {
+  color: aquamarine;
+}
