@@ -1,0 +1,33 @@
+/* FUENTE EXTERNA POR URL E IMPORT */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); */
+
+@font-face { /* FUENTE EXTERNA POR ARCHIVO */
+  font-family: Poppins;
+  font-weight: 400; /* Siempre hay que especificar esta propiedad */
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 700;
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+
+body {
+  font-family: Tahoma, Verdana, Geneva, sans-serif;
+             /* Tahoma, nombre de la fuente seleccionada
+                Verdana y Geneva, reemplazos en caso que no se encuentre esa fuente
+                sans-serif, familia tipográfica por defecto del navegador */
+}
+
+h1 {
+  color: #ff7f50;
+  /*font-weight: 700; POR DEFECTO */
+}
+
+p {
+  /*font-family: 'Courier New', Courier, monospace;*/ /* FUENTE NATIVA DEL NAVEGADOR */
+  font-family: Poppins, sans-serif;
+  color: rgb(114, 114, 197);
+  /*font-weight: 400; POR DEFECTO */
+}
