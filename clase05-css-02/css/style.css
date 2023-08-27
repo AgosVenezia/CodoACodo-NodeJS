@@ -21,13 +21,35 @@ body {
 }
 
 h1 {
-  color: #ff7f50;
+  color: coral; /* NATIVO DEL NAVEGADOR - POR NOMBRE - TOTAL: 150 */
+  color: #ff7f50; /* CÓDIGO HEXADECIMAL - 0-9 Y A-F */
+  color: rgb(255, 127, 80); /* CÓDIGO DECIMAL RGB - RED, GREEN, BLUE - 0-255 */
+  color: rgba(255, 127, 80, 0.5); /* CÓDIGO DECIMAL RGBA - a: canal alpha de transparencia, 1 es opaco, 0 transparente, los porcentajes intermedios, como 0.5, es un 50% de opacidad */
+  color: hsl(16, 100%, 66%); /* CÓDIGO HSL - TONO/MATIZ 0-360, SATURACIÓN 0-100%, LUMINOSIDAD 0-100% */
   /*font-weight: 700; POR DEFECTO */
 }
 
 p {
   /*font-family: 'Courier New', Courier, monospace;*/ /* FUENTE NATIVA DEL NAVEGADOR */
   font-family: Poppins, sans-serif;
+  color: #FF0000; /* TODO DE ROJO, NADA DE VERDE, NADA DE AZUL - EN PARES */
+  color: rgb(255,0,0); /* TODO DE ROJO, NADA DE VERDE, NADA DE AZUL */
+  color: #00FF00; /* NADA DE ROJO, TODO DE VERDE, NADA DE AZUL */
+  color: rgb(0,255,0); /* NADA DE ROJO, TODO DE VERDE, TODO DE AZUL */
+  color: #0000FF; /* NADA DE ROJO, NADA DE VERDE, TODO DE AZUL */
+  color: rgb(0,0,255); /* NADA DE ROJO, NADA DE VERDE, TODO DE AZUL */
+  color: rgba(0,0,255,1); /* NADA DE ROJO, NADA DE VERDE, TODO DE AZUL, 0% TRANSPARENTE, 100% OPACO */
+  color: hsl(240, 100%, 50%); /* TONO/MATIZ 240, SATURACIÓN 100%, LUMINOSIDAD 50% */
   color: rgb(114, 114, 197);
   /*font-weight: 400; POR DEFECTO */
+}
+
+img {
+  width: 200px;
+}
+
+svg {
+  width: 100px; /* POR DEFECTO: 24px X 24px */
+  height: 100px;
+  fill: red;
 }
