@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box; /* Reseteo para todas las cajas */
+}
+
+.item {
+  /*width: 10em;
+  height: 10em;*/
+  /*width: 5em;
+  height: 5em;*/ /* Medidas si uso 2em en font-size */ /* Buena opción para que el texto no exceeda el contenedor */
+  width: 10rem; /* Con rem no afecta el cambio de tamaño de letra */ /* Base 16px del HTML, no los 32px del font-size */
+  height: 160px; /* Con px no afecta el cambio de tamaño de letra */ /* 16px fijos */
+  border: solid;
+  border: 2px dotted red; /* Siempre hay que poner el estilo, sino no aparece */
+  font-size: 2em; /* Si uso em en la letra, también crece el em del alto y ancho, se adapta el elemento */
+  /*display: block;*/ /* POR DEFECTO */
+  /*display: inline;*/ /* Uno a lado del otro, pero colapsados */
+  display: inline-block; /* DISPLAY MODIFICADO - Lo transformo en un elemento en línea - Respeta ancho y alto */
+  /*box-sizing: content-box;*/ /* Tamaño del contenido - crece */ /* Por defecto */
+  box-sizing: border-box; /* Tamaño de toda la caja completa, no crece si yo agrego padding o border. Suma los borders y los paddings, y lo que resta se lo agrega al contenido */
+}
+
+.item-2 {
+  /* display: none; */ /* Lo hago desaparecer */
+  padding: 10px 2em; /* Con el padding, al contrario del margin, el elemento se expande, crece en tamaño, porque el tamaño anterior es del contenido */ /* En cuanto a valores, funciona igual que el margin */
+  /*padding-left: 20px;*/ /* No se aplica porque tiene box-sizing: border-box */
+  border-right: 3px solid green;
+  overflow: hidden; /* Lo que sobra, desaparece */
+  overflow: scroll; /* Se ve todo el contenido, pero con scroll */
+  overflow: visible; /* Se ve todo el contenido si hay overflow - POR DEFECTO */
+  overflow: auto; /* Se colocan las barras de desplazamiento necesarias */
+}
+
+a {
+  /*display: inline;*/ /* POR DEFECTO */
+  display: block; /* DISPLAY MODIFICADO - Lo transformo en un elemento en bloque */
+}
+
+h1,
+p {
+  margin: 0; /* Reseteo de márgenes */
+}
+
+h1 {
+  margin: auto; /* Automático */
+  margin: 10px; /* Mismo margen para los cuatro lados */ /* Cualquier unidad de medida */
+  margin: 10px 5px; /* El primero es para arriba y abajo, el segundo para izquierda y derecha */
+  margin: 10px 5px 2px; /* El primero es para arriba, el segundo para izquierda y derecha, el tercero para abajo */
+  margin: 10px 5px 2px 0; /* El primero es para arriba, el segundo para la derecha, el tercero para abajo, el cuarto para la izquierda */
+  margin-bottom: 30px; /* Es igual a margin: 0 0 30px 0; */
+}
+
+P {
+  margin-top: 20px; /* Los márgenes no se suman, se solapan. Queda el margen más grande, en este caso, 30px del bottom del h1 */
+}
+
+br {
+  display: none;
+} /* Le saca los estilos al salto de línea br */
+
+.item-3 {
+  border: 2px solid red; /* Línea común */
+  border: 2px dotted red; /* Línea punteada */
+  border: 2px dashed red; /* Línea con guiones */
+  border: 2px double red; /* Línea sólido doble */
+  border: 2px groove red; /* Línea cromada, 3D */
+  border: 2px ridge red; /* Línea alto relieve */
+  border: 2px inset red; /* Línea dentro de la caja */
+  border: 2px outset red; /* Línea afuera de la caja */
+}

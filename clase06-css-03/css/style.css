@@ -1,0 +1,38 @@
+/*
+RELATIVAS
+em = 1em = tamaño de fuente relativo a la herencia de su contenedor.
+rem = 1rem = tamaño de fuente relativo al valor por defecto del navegador. Utiliza de base la medida de HTML.
+vw = 100vw = total del ancho visible del navegador.
+vh = 100vh = total del alto visible del navegador.
+% = porcentaje relativo al elemento padre.
+*/
+html {
+  font-size: 30px;
+}
+
+body {
+  font-size: 16px; /* 16px porque es fija, absoluta, no depende de otro factor */
+  min-height: 200vh; /* Scroll abajo - 2 veces el alto del viewport */
+}
+
+main {
+  font-size: 1.5em; /* 16px = 1em */ /* 1.5em = 1.5 * 16px de body = 24px */
+  background-color: red;
+  width: 50%; /* 50% de su contenedor - depende del tamaño de su contenedor, en este caso del body */
+}
+
+p {
+  font-size: 14px; /* Medida ABSOLUTA - medida fija, no depende de otro factor, siempre es la misma, no se adaptan a diferentes pantallas */ /* 14 px fijos */
+  font-size: 1em; /* Medida RELATIVA - se puede adaptar a diferentes pantallas, es flexible, depende del contenedor o ciertos elementos */ /* 24px porque hereda de main, que a su vez hereda de body */
+  font-size: 1.5rem; /* Medida RELATIVA - se puede adaptar a diferentes pantallas, es flexible, depende del root, del HTML */ /* Medida final: 45px (30px de HTML * 1.5) */
+}
+
+span {
+  font-size: 1.5rem; /* Crece todo con la misma base, la del HTML */ /* 45px */
+  font-size: 1.5em; /* 67.5px */
+}
+
+section {
+  background-color: green;
+  width: 50vw; /* 50% del viewport - depende del tamaño de la pantalla */
+}

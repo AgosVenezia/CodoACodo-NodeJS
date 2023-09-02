@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title> <!-- Cambia la posición normal (estática) de los elementos, que es hacia arriba a la izquierda -->
+    <style>
+      body {
+        height: 300vh;
+      }
+      .container {
+        background-color: teal;
+        padding: 2em;
+      }
+
+      .cuadrado {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        border: 1px solid white;
+        font-size: 2em;
+        color: snow;
+        padding: 0.5em;
+        /*position: static;*/ /* POR DEFECTO - El elemento adopta el flujo natural del sitio */
+      }
+
+      .cuadrado-fixed {
+        background-color: darkorange;
+        position: fixed;
+        right: 50%;
+        top: 0;
+      }
+      .cuadrado-relative {
+        background-color: darkorange;
+        position: relative; /* Se le activan las propiedades top, left, right y bottom - distancia al punto de origen */ /* El elemento se mueve, solapa a otros, pero el lugar que ocupaba sigue siendo del elemento */
+        /*left: 100px;*/ /* Del margen izquierdo, 100px al punto de origen */
+        /*top: -50px;*/ /* Del top hacia arriba */
+        /*top: 50px;*/
+      }
+      .cuadrado-absolute {
+        width: 100px;
+        height: 100px;
+        background-color: darkorange;
+        position: absolute;
+        left: 100px;
+        top: 0;
+      }
+      .cuadrado-sticky {
+        background-color: darkorange;
+        position: sticky;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cuadrado cuadrado-relative">1</div>
+      <div class="cuadrado cuadrado-absolute">2</div>
+      <div class="cuadrado">3</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <link rel="stylesheet" href="css/display.css" />
+  </head>
+  <body>
+    <h1>Display</h1>
+    <h2>Cómo se ubican los elementos dentro de mi sitio</h2>
+    <h3>Cambia la naturaleza de cómo se representa el elemento.</h3>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <ul>
+      <li>Block: Ocupan el 100% del ancho de su contenedor y comienzan en una nueva línea.</li>
+      <li>Inline: Ocupan el ancho de su contenido y no aceptan propiedades de width, height o margins y paddings superiores</li>
+      <li>Inline-block: La combinación de los anteriores, ocupa el ancho de su contenido pero sí acepta que se modifique su tamaño o sus propiedades de caja.</li>
+      <li>None: El elemento seleccionado no es mostrado ni ocupa espacio en el lugar donde debería estar.</li>
+    </ul>
+    <div>
+      <h2>Modelo de caja: todos los elementos HTML que creamos en nuestro archivo son cajas, con ciertos límites y dimensiones.</h2>
+      <ul>
+        <li>Margin: separa un elemento del otro, crea espacios, pero no forma parte del elemento, es la distancia con el otro.</li>
+        <li>Border: estilo, ancho y color del borde, forma parte del elemento.</li>
+        <li>Padding: margen interno que separa el border del contenido, forma parte del elemento.</li>
+      </ul>
+    </div>
+
+    <a href="">1</a><br>
+    <a href="">2</a><br>
+    <a href="">3</a><br>
+    
+    <a href="">Uno</a> <!-- DISPLAY INLINE NATIVO DE LA ETIQUETA - Cada elemento sólo ocupa su lugar, se acomodan uno aL lado del otro -->
+    <a href="">Dos</a>
+    <a href="">Tres</a>
+
+<!-- Elementos que tienen la class item, cada uno con su número -->
+    <!-- (.item.item-$>{$})*3 -->
+    <div class="item item-1">1</div> <!-- DISPLAY IN BLOCK NATIVO DE LA ETIQUETA - Cada elemento ocupa todo el ancho de su contenedor -->
+    <div class="item item-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, odio?</div> <!-- Overflow: el contenido se sale del contenedor -->
+    <div class="item item-3">3</div>
+  </body>
+</html>
